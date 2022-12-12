@@ -4,69 +4,91 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <title>Responsive Design</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;900&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Fredoka+One&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <style>
+        .apple > h5{
+            font-family: 'Abril Fatface', cursive;
+        }
+        .apple > p{
+            font: 12px sans-serif;
+            margin: 1rem;
+        }
     </style>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Fredoka+One&family=Permanent+Marker&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav style=" color: white;">
-      <div class="container">
-        <div class="row bg-dark">
-            <div class="col-4" style="display: flex; justify-content: center;">
-                <div class="navbar-brand" href="#" style="font-family: 'Noto Sans JP', sans-serif;"><h3>人類社会のすべ</h3>
-                <p class="fs-6 m-1">blah blah blah</p></div>
+    <nav>
+        <div class="container">
+            <div class="row bg-dark text-white pb-3">
+                <div class="col-md-4 p-2">
+                    <div class="navbar-brand fw-bolde" href="#" 
+                    style="font-family: 'Permanent Marker', cursive; display: flex; flex-direction: column; 
+                    justify-content: center; align-items: center;"><h2>CENTERWILL</h3>
+                    <p class="fs-6">something good</p></div>
+                </div>
+                <div class="col-md-8 fw-bolder" style="display: flex; justify-content: space-around; align-items: center;">
+                    <div class="navbar-brand" href="#">HOME</div>                  
+                    <div class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          ABOUT
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          DISCOVER
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                    <div class="navbar-brand text-success" href="#">DONATE</div>
+                    <div class="navbar-brand" href="#">CONTACT</div>
+                </div>
             </div>
-            <div class="col-8" style="display: flex; justify-content: space-around; color: white; align-items: center;">
-                <div class="navbar-brand" href="#">Home</div>
-                <div class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      About
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
+            <div class="row" style="
+            background-image: url(./assets/hi2.jpg);
+            height: 550px;
+            background-size: cover;
+            align-items: center;
+            ">
+            <div class="div" style="display: flex; 
+            flex-direction: column;
+            align-items: center;">
+                <div class="circle text-white" style="
+                border: 2px solid white;
+                border-radius: 50%;
+                display: flex;
+                height: 150px;
+                width: 150px;
+                justify-content: center;
+                align-items: center;
+                ">
+                    <h5 class="border-top border-bottom fw-bold">CENTERWILL</h5>
                 </div>
-                <div class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Discover
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
+                <div class="text-white fw-bolder" style="width: 250px; text-align: center;">
+                    <p class="fw-light fst-italic">PLEASE JOIN US IN CARING FOR ORPHANS & WIDOWS</p>
                 </div>
-                <div class="navbar-brand" href="#">Donate</div>
-                <div class="navbar-brand" href="#">Contact</div>
-            </div>
-        </div>
-
-        <div class="row" style="background-image: url(./assets/hi2.jpg); background-size: 1350px; height: 500px;">
-            <div style="display: flex; justify-content:center; align-items: center;">
-                <div class="rounded-circle" style="height: 180px; width: 180px; border: 2px solid white; margin: 40px;">
-                    <h3 class="m-5 ">人類ss</h3>
+                <div class="d-flex">
+                    <input type="text" class="form-control m-1" placeholder="$50.00" aria-label="First name" style="width: 170px;">
+                    <button type="button" class="btn btn-info">Submit</button>
                 </div>
-                <div><h2 class="m-">PLEASE JOIN OUR FIGHT.</h2>
-                    <div class="row">
+                <div>
+                    <div class="row my-4">
                         <div class="col">
-                          <input type="text" class="form-control" placeholder="$50.00" aria-label="First name" style="width: 170px;">
-                        </div>
-                        <div class="col">
-                            <button type="button" class="btn btn-info">Submit</button>
-                        </div> 
-                      </div>
-                      <div class="row my-4">
-                        <div class="col">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle text-white fw-bold" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Learn More
                               </a>
                               <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -76,117 +98,122 @@
                               </ul>                            
                         </div>
                       </div>
-                </div>    
-            </div>
-         </div>
+                </div>
 
-         <div class="row">
-            <div class="col-4" style="background: #684a3a;">
-                <div class="card border border-white" style="height: 300px; margin: 20px; background: #684a3a;">
-                    <div class="card-body">
-                      <h5 class="card-title border-bottom" style="font-size: 55px; font-family: 'Permanent Marker', cursive; height: 70%; ">RESCUE AN ORPHAN</h5>
-                      <p class="card-text p-4">Meet the basic needs of child in Kenya.</p>
+            </div>
+            </div>
+            <div class="row">
+                <div class="col-4 p-2" style="background: #684a3a;">
+                    <div class="text-white" style="height: 250px;
+                    border: 2px solid white;
+                    display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
+                        <h2 class="fs-3 " style="font-family:'Permanent Marker', cursive;">RESCUE AN ORPHAN</h2>
+                        <div class="" style="width: 30px; border-bottom: 2px solid white"></div>
+                        <p>Meet the cruical need of child in Kenya.</p>
                     </div>
-                  </div>
-            </div>
-            <div class="col-4" style="background: #ec693f;">
-                <div class="card border border-white" style=" height: 300px; margin: 20px; background: #ec693f;">
-                    <div class="card-body">
-                      <h5 class="card-title border-bottom" style="font-size: 50px; font-family: 'Permanent Marker', cursive; height: 70%;">FUND A ORPHANAGE</h5>
-                      <p class="card-text p-4">Make sure every child has a bed.</p>
+                </div>
+                <div class="col-4 p-2" style="background: #ec693f;">
+                    <div class="text-white" style="height: 250px;
+                    border: 2px solid white;
+                    display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
+                        <h2 class="fs-3 " style="font-family:'Permanent Marker', cursive;">FUND AN ORPHANs</h2>
+                        <div class="" style="width: 30px; border-bottom: 2px solid white"></div>
+                        <p>Meet the cruical need of child in Kenya.</p>
                     </div>
-                  </div>
-            </div>
-            <div class="col-4" style="background: #ca3341;">
-                <div class="card border border-white" style="height: 300px; margin: 20px; background: #ca3341;">
-                    <div class="card-body">
-                      <h5 class="card-title border-bottom" style="font-size: 55px; font-family: 'Permanent Marker', cursive; height: 70%;">COMFORT A WIDOW</h5>
-                      <p class="card-text p-4">Help meet cruical needs of child in Kenya.</p>
+                </div>
+                <div class="col-4 p-2" style="background: #ca3341;">
+                    <div class="text-white" style="height: 250px;
+                    border: 2px solid white;
+                    display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
+                        <h2 class="fs-3 " style="font-family:'Permanent Marker', cursive;">COMFORT A WIDOW</h2>
+                        <div class="" style="width: 30px; border-bottom: 2px solid white"></div>
+                        <p>Meet the cruical need of child in Kenya.</p>
+
                     </div>
-                  </div>
+                </div>
             </div>
-         </div>
+            <div class="row" style="height: 450px; background-image:url(./assets/hello.jpg); background-size: cover ;">
+                    <div class="p-3">
+                      <div class="text-white p-3" style="display: flex; flex-direction: column; align-items: center;">
+                        <h2 class="" style="font-family: 'Abril Fatface', cursive;">MY MISSION</h2>
+                        <p class="" style="width: 300px;">I deserve good grades. My hobbies are reading books and working out. Along with this, I also like cooking. While researching the company, I got to know about the in-house gym. To Kavita mam.</p>
+                      <button type="button" class="btn btn-success">Learn More</button>
+                     </div>
+                </div>
+            </div>
+            <div class="row p-5" style="text-align: center;">
+                <h3 class="mb-4" style=" font-family: 'Fredoka One', cursive">How can you help?</h3>
+                <div class="row" style="
+                display: flex;
+                justify-content: center;">
+                    <div class="" style="width: 300px;">
+                        <h2 class="text-warning" style="font-family: 'Permanent Marker', cursive;">Pray</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Nisi illum nihil tempore doloremque unde corrupti ex quos distinctio quas dicta.</p>
+                        <h6 class="text-danger">Become a Warrior</h6>
+                    </div>
 
-         <div class="row bg-dark" style="height: 440px; background-image: url(./assets/hello.jpg); background-size: 1350px;">
-          <div class="col-6">
-            
-          </div>
-          <div class="col p-3">
-            <div class="col-6";>
-            <h2 class="p-5" style="font-family: 'Abril Fatface', cursive; margin-left: -50px;">OUR MISSION</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias, neque odio tempore sint aliquam quas ducimus. 
-              Repellendus quasi perferendis quisquam adipisci alias veritatis esse? Neque asperiores temporibus excepturi obcaecati amet?
-            </p>
-            <button type="button" class="btn btn-success">Learn More</button>
-            </div>
-          </div>
-         </div>
-         
-         <div class="row text-dark bg-white p-5">
-          <div class="row" style="display: flex;  text-align: center;">
-            <h3 class="mb-4" style=" font-family: 'Fredoka One', cursive;; ">How can you Help?</h3>
-          </div>
-          <div class="row">
-            <div class="col-2"></div>
-            <div class="col-8" style="display: flex;">
-              <div class="col" style="display: flex; flex-direction: column; text-align: center;">
-                <h2 class="text-warning" style="font-family: 'Permanent Marker', cursive;">Pray</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                   Nisi illum nihil tempore doloremque unde corrupti ex quos distinctio quas dicta.</p>
-                   <h6 class="text-danger">Become a Warrior</h6>
-              </div>
-             
-              <div class="col"  style="display: flex; flex-direction: column; text-align: center;">
-                <h2 class="text-warning" style="font-family: 'Permanent Marker', cursive;">Go</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Nisi illum nihil tempore doloremque unde corrupti ex quos distinctio quas dicta.</p>
-                  <h6 class="text-danger">Become a Warrior</h6>
-              </div>
-              <div class="col"  style="display: flex; flex-direction: column; text-align: center;">
-                <h2 class="text-warning" style="font-family: 'Permanent Marker', cursive;">Give</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Nisi illum nihil tempore doloremque unde corrupti ex quos distinctio quas dicta.</p>
-                  <h6 class="text-danger">Take the Journey</h5>
-              </div>
-              
+                    <div style="width: 300px;">
+                        <h2 class="text-warning" style="font-family: 'Permanent Marker', cursive;">Give</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Nisi illum nihil tempore doloremque unde corrupti ex quos distinctio quas dicta.</p>
+                        <h6 class="text-danger">Take the Journey</h5>
+                    </div>
 
-            </div>
-            <div class="col-2"></div>
-          </div>
-         </div>
-
-         <div class="row bg-dark p-5">
-          <div class="col-1"></div>
-          <div class="col-10" style="display:flex ;">
-            c
-            <div class="col">
-              <h5 class=" text-success">DISCOVER</h5>
-              <p>PHOTOGRAPHER</p>
-              <p>VIDEOS</p>
-              <p>STORIES</p>
-              <p>FAQ</p>
-            </div>
-            <div class="col">
-              <h5 class="text-success">DONATE</h5>
-              <p>RESCUE A ORPHAN</p>
-              <p>FUND AN ORGHANAGE</p>
-              <p>COMFORT A WIDOW</p>
-            </div>
-            <div class="col">
-              <h5 class=" text-success">CONTACT</h5>
-              <p>MAILING ADDRESS</p>
-              <p>CENTERWILL</p>
-              <p>PO BOX: 696969</p>
-              <p>BROOKLYN NY</p>
-            </div>
-          </div>
-          <div class="col-1"></div>
-          </div>
-         </div>
+                    <div class="" style="width: 300px;"">
+                        <h2 class="text-warning" style="font-family: 'Permanent Marker', cursive;">Go</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Nisi illum nihil tempore doloremque unde corrupti ex quos distinctio quas dicta.</p>
+                        <h6 class="text-danger">Become a Warrior</h6>
+                    </div>
 
 
-      </div>
+                </div>
+            </div>
+            <div class="row p-4 bg-dark text-white">
+                <div class="col-md-6 d-flex">
+                    <div class="apple col">
+                        <h5 class=" text-success">COMPANY</h5>
+                        <p>HOME</p>
+                        <p>ABOUT</p>
+                        <p>STAFF</p>
+                        <p>NEWS</p>
+                        <p>CONTACT</p>
+                    </div>
+                    <div class="apple col">
+                        <h5 class=" text-success">DISCOVER</h5>
+                        <p>PHOTOGRAPHER</p>
+                        <p>VIDEOS</p>
+                        <p>STORIES</p>
+                        <p>FAQ</p>
+                    </div>
+
+                </div>
+                <div class="col-md-6 d-flex">
+                    <div class="apple col">
+                        <h5 class=" text-success">DONATE</h5>
+                        <p>RESCUE AN ORPHAN</p>
+                        <p>FUND AN ORPHAN</p>
+                        <p>COMFORT A WIDOW</p>
+                    </div>
+                    <div class="apple col">
+                        <h5 class=" text-success">CONTACT</h5>
+                        <p>MAILING ADDRESS</p>
+                        <p>CENTERWILL</p>
+                        <p>PO BOX: 14202</p>
+                        <p>KATHMANDU, NEPAL</p>
+                        <p class="text-warning">KRITISHMA.COM.NP</p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row bg-black text-white p-2" style="text-align: center;">
+                <p class="fs-6">&copy;Centerwill | A Non Profit organization</p>
+            </div>
+        </div> 
     </nav>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+   
+    
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
 </body>
 </html>
